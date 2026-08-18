@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at top, #163b32, #070707 50%);
+
+    color: #eee;
+}
+
+
+/* HEADER */
+
+header {
+    padding: 25px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span,
+.title span {
+    color: #39e58c;
+}
+
+header p {
+    color: #666;
+    font-size: 12px;
+}
+
+
+/* MAIN */
+
+main {
+    min-height: calc(100vh - 130px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 750px;
+
+    padding: 40px;
+
+    background: #0d0d0d;
+
+    border: 1px solid #292929;
+    border-radius: 18px;
+
+    box-shadow: 0 25px 70px #000;
+}
+
+
+/* TITLE */
+
+.title {
+    margin-bottom: 35px;
+}
+
+.title p {
+    color: #39e58c;
+
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.title h1 {
+    margin: 10px 0;
+
+    font-size: 42px;
+}
+
+.title small {
+    color: #777;
+}
+
+
+/* PRODUCTS */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.product {
+    padding: 18px;
+
+    background: #111;
+
+    border: 1px solid #242424;
+    border-radius: 10px;
+}
+
+.product label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #39e58c;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+
+    margin-bottom: 10px;
+    padding: 12px;
+
+    background: #080808;
+    color: #fff;
+
+    border: 1px solid #292929;
+    border-radius: 6px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #39e58c;
+}
+
+
+/* BUTTON */
+
+button {
+    width: 100%;
+
+    padding: 15px;
+
+    background: #39e58c;
+    color: #000;
+
+    border: none;
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 25px #39e58c33;
+}
+
+
+/* BILL */
+
+.bill {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.3fr;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.bill div {
+    padding: 20px 10px;
+
+    text-align: center;
+
+    background: #111;
+
+    border: 1px solid #222;
+    border-radius: 10px;
+}
+
+.bill small {
+    display: block;
+
+    color: #666;
+
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.bill b {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #aaa;
+
+    font-size: 18px;
+}
+
+.bill .final {
+    border-color: #39e58c;
+}
+
+.bill .final b {
+    color: #39e58c;
+    font-size: 21px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 20px;
+
+    text-align: center;
+
+    color: #555;
+
+    font-size: 11px;
+
+    border-top: 1px solid #222;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .title h1 {
+        font-size: 34px;
+    }
+
+    .products,
+    .bill {
+        grid-template-columns: 1fr;
+    }
+}

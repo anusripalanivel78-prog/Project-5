@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Supermarket Billing</title>
+
+    <link rel="stylesheet" href="style5.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SMART<span>CART</span></div>
+    <p>Supermarket Billing System</p>
+</header>
+
+
+<main>
+
+    <section class="card">
+
+        <div class="title">
+            <p>QUICK BILLING</p>
+            <h1>Customer <span>Bill</span></h1>
+            <small>Enter quantity and unit price</small>
+        </div>
+
+
+        <div class="products">
+
+            <div class="product">
+                <label>Product 1</label>
+
+                <input
+                    type="number"
+                    id="qty1"
+                    placeholder="Quantity"
+                    min="1">
+
+                <input
+                    type="number"
+                    id="price1"
+                    placeholder="Unit Price"
+                    min="0">
+            </div>
+
+
+            <div class="product">
+                <label>Product 2</label>
+
+                <input
+                    type="number"
+                    id="qty2"
+                    placeholder="Quantity"
+                    min="1">
+
+                <input
+                    type="number"
+                    id="price2"
+                    placeholder="Unit Price"
+                    min="0">
+            </div>
+
+
+            <div class="product">
+                <label>Product 3</label>
+
+                <input
+                    type="number"
+                    id="qty3"
+                    placeholder="Quantity"
+                    min="1">
+
+                <input
+                    type="number"
+                    id="price3"
+                    placeholder="Unit Price"
+                    min="0">
+            </div>
+
+        </div>
+
+
+        <button onclick="generateBill()">
+            Generate Bill →
+        </button>
+
+
+        <div class="bill">
+
+            <div>
+                <small>TOTAL AMOUNT</small>
+                <b id="total">₹0.00</b>
+            </div>
+
+            <div>
+                <small>DISCOUNT</small>
+                <b id="discount">₹0.00</b>
+            </div>
+
+            <div class="final">
+                <small>FINAL PAYABLE</small>
+                <b id="payable">₹0.00</b>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    JavaScript Practical • Supermarket Billing System
+</footer>
+
+
+<script src="script5.js"></script>
+
+</body>
+</html>
